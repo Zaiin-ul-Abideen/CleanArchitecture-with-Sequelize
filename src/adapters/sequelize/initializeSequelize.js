@@ -17,7 +17,7 @@ const sequelize = new Sequelize("testing", "root", "root", {
   },
 });
 
-console.log('INITIALIZING MODELS');
+console.log('INITIALIZING MODELS ');
 const models = modelsInitializer(sequelize);
 console.log('CREATING ASSOCIATIONS');
 const modelCustomer = customer(models);

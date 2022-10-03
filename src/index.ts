@@ -1,6 +1,5 @@
 import "reflect-metadata";
 import express from "express";
-const mongoose = require("mongoose");
 import getCustomersRoute from "./routes/customers/getAllCustomer";
 import createCustomerRoute from "./routes/customers/createCustomer";
 
@@ -13,7 +12,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/customer", getCustomersRoute);
 app.use("/api/customer", createCustomerRoute);
-
 
 app.listen(process.env.PORT, () => {
   console.log("Serverv is running on ", process.env.PORT);

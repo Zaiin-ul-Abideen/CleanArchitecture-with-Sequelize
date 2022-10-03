@@ -1,38 +1,33 @@
-import Sequelize from 'sequelize';
-// import { MYSQL_DATE } from '../customSequelizeDataTypes';
+import Sequelize from "sequelize";
 
 const options = {
-  timestamps: true,
-  tableName: 'users',
-  createdAt: 'addDate',
-  updatedAt: 'changeDate',
+  tableName: "customers",
+ 
 };
-
-
 
 const definition = {
   customerName: {
     field: "customerName",
     allowNull: false,
-    type: DataTypes.STRING(400),
+    type: Sequelize.DataTypes.STRING(400),
   },
   customerEmail: {
     field: "customerEmail",
     allowNull: false,
-    type: DataTypes.STRING(400),
+    type: Sequelize.DataTypes.STRING(400),
   },
   customerPhone: {
     field: "customerPhone",
     allowNull: true,
-    type: DataTypes.STRING(400),
+    type: Sequelize.DataTypes.STRING(400),
   },
   customerAddress: {
     field: "customerAddress",
     allowNull: true,
-    type: DataTypes.STRING(400),
+    type: Sequelize.DataTypes.STRING(400),
   },
 };
 
 export default (sequelize) => {
-  return sequelize.define('customers', definition, options);
+  return sequelize.define("customers", definition, options);
 };

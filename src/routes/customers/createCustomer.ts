@@ -1,4 +1,4 @@
-import { Router, Request, Response } from "express";
+import { Router } from "express";
 import container from "../../dependencies";
 import { CreateCustomer } from "../../application/useCases/createCustomer";
 

@@ -1,5 +1,5 @@
 import customer from "./customer";
 
 export default (sequelize) => ({
-  customer: customer(sequelize)
+  customer: customer(sequelize),
 });

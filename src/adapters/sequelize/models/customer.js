@@ -1,15 +1,9 @@
-import Sequelize from 'sequelize';
-// const Sequelize = require('sequelize');
-// import { MYSQL_DATE } from '../customSequelizeDataTypes';
+import Sequelize from "sequelize";
 
 const options = {
-  timestamps: true,
-  tableName: 'customers',
-  createdAt: 'addDate',
-  updatedAt: 'changeDate',
+  tableName: "customers",
+ 
 };
-
-
 
 const definition = {
   customerName: {
@@ -35,5 +29,5 @@ const definition = {
 };
 
 export default (sequelize) => {
-  return sequelize.define('customers', definition, options);
+  return sequelize.define("customers", definition, options);
 };

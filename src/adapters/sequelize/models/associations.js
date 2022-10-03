@@ -1,10 +1,6 @@
-export default(models)=>{
+export default (models) => {
+  // models.customer.hasMany(models.customer,{
+  //     as:'customers'
+  // })
 
-    models.customer.hasMany(models.customer,{
-        as:'customers'
-    })
-
-    
-
-
-}
+};

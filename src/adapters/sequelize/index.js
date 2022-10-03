@@ -1,19 +1,26 @@
-import initializeSequelize from './initializeSequelize';
+// import initializeSequelize from './initializeSequelize'
 
-const cache = {};
-const secretID = process.env.AWS_DB_SECRET;
-if (!secretID) {
-  throw Error('Missing -- process.env.AWS_DB_SECRET');
-}
-// TODO: Convert sequelize to TS
-export default async () => {
-  if (cache[secretID]) {
-    return cache[secretID];
-  }
+// const initializeSequelize=require('./initializeSequelize')
 
-  cache[secretID] = initializeSequelize(secretID);
+// const cache = {};
+// const secretID = process.env.AWS_DB_SECRET;
+// if (!secretID) {
+//   throw Error('Missing -- process.env.AWS_DB_SECRET');
+// }
+// // TODO: Convert sequelize to TS
+// export default async () => {
+//   if (cache[secretID]) {
+//     return cache[secretID];
+//   }
 
-  return cache[secretID];
-};
+//   cache[secretID] = initializeSequelize(secretID);
 
-export const trimQuery = (query) => query.replace(/\s+/g, ' ');
+//   return cache[secretID];
+// };
+
+// export default async () => {
+//   initializeSequelize();
+//   return ;
+// };
+
+// export const trimQuery = (query) => query.replace(/\s+/g, " ");

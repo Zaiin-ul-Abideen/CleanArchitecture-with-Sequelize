@@ -1,9 +1,10 @@
 import Sequelize from 'sequelize';
+// const Sequelize = require('sequelize');
 // import { MYSQL_DATE } from '../customSequelizeDataTypes';
 
 const options = {
   timestamps: true,
-  tableName: 'users',
+  tableName: 'customers',
   createdAt: 'addDate',
   updatedAt: 'changeDate',
 };
@@ -14,22 +15,22 @@ const definition = {
   customerName: {
     field: "customerName",
     allowNull: false,
-    type: DataTypes.STRING(400),
+    type: Sequelize.DataTypes.STRING(400),
   },
   customerEmail: {
     field: "customerEmail",
     allowNull: false,
-    type: DataTypes.STRING(400),
+    type: Sequelize.DataTypes.STRING(400),
   },
   customerPhone: {
     field: "customerPhone",
     allowNull: true,
-    type: DataTypes.STRING(400),
+    type: Sequelize.DataTypes.STRING(400),
   },
   customerAddress: {
     field: "customerAddress",
     allowNull: true,
-    type: DataTypes.STRING(400),
+    type: Sequelize.DataTypes.STRING(400),
   },
 };
 

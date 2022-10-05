@@ -14,15 +14,15 @@ export default async function initializeSequelize() {
     },
   });
 
-  sequelize
-    .sync({ alter: true })
-    .then(() => {
-      console.log("Re-synced");
-    })
-    .catch((error) => {
-      console.log("Error in syncing");
-      console.log(error);
-    });
+  // sequelize
+  //   .sync({ alter: true })
+  //   .then(() => {
+  //     console.log("Re-synced");
+  //   })
+  //   .catch((error) => {
+  //     console.log("Error in syncing");
+  //     console.log(error);
+  //   });
 
   console.log("INITIALIZING MODELS");
   const models = modelsInitializer(sequelize);

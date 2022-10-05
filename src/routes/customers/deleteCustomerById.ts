@@ -1,6 +1,6 @@
 import { Router } from "express";
 import container from "../../dependencies";
-import { DeleteCustomerById } from "../../application/useCases/deleteCustomerById";
+import { DeleteCustomerById } from "../../application/useCases/customers/deleteCustomerById";
 
 const router: Router = Router();
 

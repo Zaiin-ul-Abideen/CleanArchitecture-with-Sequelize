@@ -1,6 +1,6 @@
 import { Router } from "express";
 import container from "../../dependencies";
-import { CreateCustomer } from "../../application/useCases/createCustomer";
+import { CreateCustomer } from "../../application/useCases/customers/createCustomer";
 
 const router: Router = Router();
 

@@ -49,7 +49,7 @@
     "paths": {
       
       "@models/*": ["models/*"],
-      "@interfaces/*": ["application/interfaces/*"],
+      // "customInterfaces/*": ["application/interfaces/*"],
     //   "@customTypes/*": ["./customTypes/*"],
     //   "@utilities/*": ["./utilities/*"],
     //   "@helpers/*": ["./helpers/*"],

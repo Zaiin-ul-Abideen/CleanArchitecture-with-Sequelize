@@ -2,29 +2,28 @@ import Sequelize from "sequelize";
 
 const options = {
   tableName: "customers",
- 
 };
 
 const definition = {
   customerName: {
     field: "customerName",
     allowNull: false,
-    type: Sequelize.DataTypes.STRING(400),
+    type: Sequelize.DataTypes.STRING(20),
   },
   customerEmail: {
     field: "customerEmail",
     allowNull: false,
-    type: Sequelize.DataTypes.STRING(400),
+    type: Sequelize.DataTypes.STRING(20),
   },
   customerPhone: {
     field: "customerPhone",
-    allowNull: true,
-    type: Sequelize.DataTypes.STRING(400),
+    allowNull: false,
+    type: Sequelize.DataTypes.BIGINT(11),
   },
   customerAddress: {
     field: "customerAddress",
-    allowNull: true,
-    type: Sequelize.DataTypes.STRING(400),
+    allowNull: false,
+    type: Sequelize.DataTypes.STRING(20),
   },
 };
 

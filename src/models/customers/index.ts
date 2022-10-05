@@ -14,9 +14,9 @@ export const CustomerSchema = yup.object({
     .max(20, "email max 20 characters"),
 
   customerPhone: yup
-    .number()
-    .required("phone Required!"),
-    // .max(11, "phone: max 11 characters"),
+    .string()
+    .required("phone Required!")
+    .max(11, "phone: max 11 characters"),
 
   customerAddress: yup
     .string()

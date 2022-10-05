@@ -18,7 +18,7 @@ const definition = {
   customerPhone: {
     field: "customerPhone",
     allowNull: false,
-    type: Sequelize.DataTypes.BIGINT(11),
+    type: Sequelize.DataTypes.STRING(11),
   },
   customerAddress: {
     field: "customerAddress",

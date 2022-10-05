@@ -1,4 +1,4 @@
-import type { Customer } from "../../models/customers";
+import type { Customer } from "@models/customers";
 
 export const CustomerInterface = Symbol("interfaces.customers");
 

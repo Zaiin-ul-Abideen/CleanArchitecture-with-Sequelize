@@ -49,6 +49,8 @@ export class CustomersAdapter implements CustomerInterface {
     console.log("Customer id is: ", customerKey);
     const { sequelize } = await getSequelizeContext();
 
+
+    await CustomerSchema.validate(updateCustomerByid);
     const customerData = await sequelize.models.customers.update(
       updateCustomerByid,
       {
@@ -63,7 +65,6 @@ export class CustomersAdapter implements CustomerInterface {
     }
     console.log(customerData);
 
-    // CustomerSchema.validateSync(customerData);
   }
 
   async deleteCustomerById(customerKey: string): Promise<Customer> {

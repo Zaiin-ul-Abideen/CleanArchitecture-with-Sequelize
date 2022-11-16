@@ -1,5 +1,5 @@
 import { inject, injectable } from "inversify";
-import { CustomerInterface } from "../../interfaces/customerInterface";
+import { CustomerInterface } from "../../interfaces/customerInterface/customerInterface";
 // import { CustomerInterface } from "@interfaces/customerInterface";
 // import type { Customer } from "../../models/customers";
 import type { Customer } from "@models/customers";

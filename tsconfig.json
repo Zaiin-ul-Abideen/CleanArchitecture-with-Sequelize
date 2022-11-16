@@ -49,7 +49,11 @@
     "paths": {
       
       "@models/*": ["models/*"],
-      "@interfaces/*": ["application/interfaces/*"],
+      "@dependencies":["./dependencies/index.ts"],
+      "@useCases/*": ["./application/useCases/*"],
+      "@interfaces/*": ["./application/interfaces/*"],
+      // "@adapters/*": [""],
+      
     //   "@customTypes/*": ["./customTypes/*"],
     //   "@utilities/*": ["./utilities/*"],
     //   "@helpers/*": ["./helpers/*"],
@@ -58,7 +62,6 @@
     //   "@adapters/*": ["./adapters/*"],
     //   "@external/*": ["./external/*"],
     //   "@routes/*": ["./src/external/express/routes*"],
-    //   "@dependencies": ["./src/external/express/dependencies/index.ts"]
     },
      /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
@@ -86,12 +89,12 @@
     "skipLibCheck": true /* Skip type checking of declaration files. */,
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
   },
-  // "include": ["src", "models/customer"],
-  // "exclude": [
-  //   "node_modules",
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
   //   // "src/external/nextjs/node_modules",
   //   // "src/external/nextjs/build"
-  // ],
+  ],
   "ts-node": {
     // "require": ["tsconfig-paths/register"]
   },

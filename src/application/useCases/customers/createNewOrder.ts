@@ -1,12 +1,11 @@
 import { inject, injectable } from "inversify";
 import { CustomerInterface } from "../../interfaces/customerInterface/customerInterface";
-import type { Customer } from "@models/customers";
 
 @injectable()
-export class GetAllCustomer {
+export class CreateNewOrder {
   @inject(CustomerInterface) customerInterface!: CustomerInterface;
 
-  async execute(): Promise<Customer[]> {
-    return this.customerInterface.getAllCustomer();
+  async execute(data?: any): Promise<void> {
+    return this.customerInterface.createNewOrder(data);
   }
 }

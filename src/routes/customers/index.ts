@@ -1,11 +1,9 @@
-import createCustomer from "./createCustomer";
-import getAllCustomer from "./getAllCustomer";
-import getCustomerById from "./getCustomerById";
-import updateCustomerById from "./updateCustomerById";
+// import getAllCustomer from "./getAllCustomer";
+// import getCustomerById from "./getCustomerById";
 
-export default {
-  createCustomer,
-  getAllCustomer,
-  getCustomerById,
-  updateCustomerById,
-};
+// const router = {
+//   getAllCustomer,
+//   getCustomerById,
+// };
+
+// export default router;
